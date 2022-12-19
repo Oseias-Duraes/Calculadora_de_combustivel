@@ -3,6 +3,7 @@ class Calculadora:
     total_gasolina: float
     total_etanol: float
     total_diesel: float
+    percentual_gasolina: float
 
     def calcular_total_gasolina (self,km, preco_gasolina):
         self.total_gasolina = km * preco_gasolina
@@ -17,3 +18,5 @@ class Calculadora:
     def calcular_total_diesel(self,km, preco_diesel):
         self.total_diesel = km * preco_diesel
         ## return self.total_diesel -- não necessário pois o print está no main
+
+
