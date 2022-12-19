@@ -6,7 +6,7 @@ tp_combustivel = bool
 
 calc = Calculadora()
 
-tp_combustivel = input('O veículo é a diesel? ')
+tp_combustivel = input('O veículo é a diesel? Responda S ou N ')
 
 calc.km:float = float (input(
     'Informe o KM rodado: '
@@ -23,7 +23,8 @@ else:
     calc.calcular_total_etanol(calc.km, preco.preco_etanol)
     print('O preço total da gasolina é: R$', calc.total_gasolina)
     print('O preço total do etanol é: R$', calc.total_etanol)
-
+    calc.calcular_percentual(preco.preco_gasolina)
+    print('O preço ideal do etanol deve estar abaixo de: ', calc.preco_ideal_etanol)
 
 
 
